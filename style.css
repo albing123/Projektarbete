@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 body {
   margin: 0;
-  background: #222;
+  background: #000003;
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -12,7 +16,7 @@ body {
 }
 
 header {
-  background: #55b1d6;
+  background: #6f2232;
 }
 
 header::after {
@@ -23,8 +27,8 @@ header::after {
 
 .dansikon {
   float: left;
-  padding: 10px 0;
   width: 50px;
+  margin-bottom: 30px;
 }
 
 nav {
@@ -40,16 +44,16 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 100px;
-  padding-top: 23px;
+  padding-top: 15px;
 
   position: relative;
 }
 
 nav a {
-  color: #444;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -71,4 +75,58 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+.content {
+  padding: 1.5rem;
+}
+h1,
+p {
+  margin: 1rem 0;
+  color: aliceblue;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  background: #c3073f;
+  margin-top: 1.5rem;
+  flex-shrink: 0;
+}
+ul {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:focus {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
 }
