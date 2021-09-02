@@ -11,8 +11,9 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
+  height: 50px;
 }
 
 header {
@@ -26,13 +27,15 @@ header::after {
 }
 
 .dansikon {
-  float: left;
+  display: flex;
   width: 50px;
   margin-bottom: 30px;
 }
 
 nav {
-  float: right;
+  display: flex;
+  flex-shrink: 0;
+  text-align: end;
 }
 
 nav ul {
@@ -77,9 +80,6 @@ nav a:hover::before {
   width: 100%;
 }
 
-.content {
-  padding: 1.5rem;
-}
 h1,
 p {
   margin: 1rem 0;
@@ -101,7 +101,6 @@ h1 {
 footer {
   width: 100%;
   background: #c3073f;
-  margin-top: 1.5rem;
   flex-shrink: 0;
 }
 ul {
