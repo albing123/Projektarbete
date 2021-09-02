@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 
-*{
+* {
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
@@ -11,7 +11,7 @@ body {
   font-weight: 800;
   font-size: 1rem;
   text-align: center;
-} 
+}
 
 .container {
   background: #6f2232;
@@ -19,26 +19,25 @@ body {
   text-align: center;
   justify-content: center;
 }
-.container img{
+.container img {
   width: 50px;
   height: 50px;
   padding-top: 20px;
 }
-.container h1{
+.container h1 {
   font-size: 1rem;
 }
 
-nav{
+nav {
   padding-top: 25px;
 }
 
-.nav-logo{
+.nav-logo {
   text-decoration: none;
   color: white;
 }
 
-nav li{
-  
+nav li {
   display: inline-block;
   list-style: none;
   padding: 20px;
@@ -53,13 +52,11 @@ nav a:hover {
   color: #000;
 }
 
-
-
-body h1, body p {
+body h1,
+body p {
   margin: 1rem 0;
   color: black;
 }
-
 
 footer {
   width: 100%;
@@ -67,14 +64,35 @@ footer {
   position: fixed;
   bottom: 0;
 }
-footer ul{
+footer ul {
   padding: 20px;
 }
-i{
+i {
   color: #000;
 }
-i:hover{
+i:hover {
   color: white;
+}
+
+.tooltip-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  padding: 10px;
+  background-color: red;
+}
+
+.tooltip-container:hover p {
+  display: block;
+}
+
+.tooltip-container p {
+  display: none;
+}
+
+.mainbild {
+  position: fixed;
+  right: 10;
 }
 
 /* header::after {
@@ -82,7 +100,6 @@ i:hover{
   display: table;
   clear: both;
 } */
-
 
 /*
 
