@@ -6,11 +6,9 @@
   font-family: "Work Sans", sans-serif;
 }
 
-
-
 /* Vivian START*/
 
-header{
+header {
   background-color: #6f2232;
   color: black;
   display: flex;
@@ -23,23 +21,23 @@ header{
   z-index: 1;
 }
 
-.logo{
+.logo {
   height: 100%;
   text-align: center;
   padding: 0 10px;
 }
-.logo img{
+.logo img {
   padding-top: 5px;
 }
-.logo h1{
+.logo h1 {
   font-size: 20px;
 }
-.logo a{
+.logo a {
   text-decoration: none;
   color: black;
 }
 
-nav{
+nav {
   height: 100%;
   width: 100%;
   text-transform: uppercase;
@@ -48,29 +46,27 @@ nav{
   justify-content: center;
 }
 
-nav a{
+nav a {
   color: black;
   text-decoration: none;
   margin: 0 10px;
 }
 
-nav a:hover{
+nav a:hover {
   color: white;
 }
 
 @media only screen and (max-width: 600px) {
-  nav{
+  nav {
     display: block;
     padding: 10px;
   }
-  nav a{
+  nav a {
     display: block;
   }
 }
 
 /* Vivian END */
-
-
 
 footer {
   width: 100%;
@@ -110,3 +106,77 @@ i:hover {
   right: 10;
 }
 
+/* Albin start på "Kontakta-oss"*/
+
+.all-cards {
+  display: flex;
+  margin-top: 15%;
+}
+
+.card img {
+  width: 150px;
+  height: 160px;
+  padding-top: 10px;
+}
+
+.card-content {
+  display: flex;
+  width: 25%;
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .all-cards {
+    flex-direction: column;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .card-content {
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 40px;
+  padding-bottom: 15px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  padding: 8px;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  width: 70%;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.6;
+}
+
+.kontakta-oss-container {
+  background-image: linear-gradient(to bottom right, #93a5cf, #e4efe9);
+}
+
+/*Albin slut på "Kontakta-koss"*/
