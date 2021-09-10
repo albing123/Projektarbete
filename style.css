@@ -6,7 +6,7 @@
   font-family: "Work Sans", sans-serif;
 }
 
-/* Vivian START*/
+/* Header Vivian Start*/
 
 header {
   background-color: #6f2232;
@@ -66,7 +66,70 @@ nav a:hover {
   }
 }
 
-/* Vivian END */
+/* Header Vivian End */
+
+/* Kurser Vivian Start*/
+
+.kurser-container{
+  background-color: white;
+  height: 100%;
+  position: sticky;
+  top: 100px;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+.kurser-container h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.list-kurser a{
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 5px;
+  color: black;
+  
+}
+.list-kurser a:hover{
+  color:#6f2232;
+  font-weight: bold;
+}
+
+
+.dance-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 100px;
+  padding: 50px;
+  justify-content: center;
+  overflow: scroll;
+}
+video{
+  width: 400px;
+  opacity: 0.8;
+}
+.dance-text{
+  padding-left: 10px;
+} 
+.dance-text h3{
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dance-container{
+    display: block;
+    width: 100%;
+    padding: 100px 0;
+  }
+}
+
+/* Kurser Vivian end */
+
+
 
 footer {
   width: 100%;
