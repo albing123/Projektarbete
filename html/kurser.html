@@ -1,46 +1,137 @@
-<!DOCTYPE <!DOCTYPE html>
-
-<html>
-    <link rel="stylesheet" href="/Projektarbete/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="/IMG/dancing.png">
     <title>Hem</title>
-    <header>
-        <div class="container">
-        
-      
-            <nav>
-              <ul>
-                <li><a href="/Projektarbete/html/index.html">Hem</a></li>
-                <li><a href="/Projektarbete/html/kontakta-oss.html">Danslärare</a></li>
-                <li><a href="/Projektarbete/html/kurser.html">Kurser</a></li>
-                <li><a href="/Projektarbete/html/kontakta-oss.html">Kontakta oss</a></li>
-              </ul>
-            </nav>
-          </div></div>  
-    </header>
-    <body>
-      <div class="content">
-        <h1>Välkommen till dansskolan</h1>  
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-        <div class="tooltip-container">
-          <i class="fa fa-info-circle" aria-hidden="true"></i>
-          <p>
-            Du vet väl om att du alltid kan göra dina bokningar på Telefon
-            036-010203
-          </p>
-          <img class="mainbild" src="/Projektarbete/IMG/Dancer1-removebg.png" />
-        </div>
+  </head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="/IMG/dancing.png" alt="logo" width="50">
+        <h1>Dansskolan</h1>
+      </a>
     </div>
-    <footer>
-      <ul>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play fa-fw" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa fa-envelope-open fa-fw" aria-hidden="true"></i></href>
-        
-      </ul>
-    </footer>
-    </body>
+      <nav>
+        <a href="/html/index.html">Hem</a>
+        <a href="/html/kontakta-oss.html">Danslärare</a>
+        <a href="/html/kurser.html">Kurser</a>
+        <a href="/html/kontakta-oss.html">Kontakta oss</a>
+      </nav>
+  </header>
+
+  <main>
+
+<div class="kurser-container">    
+  <h1>Kurser</h1>
+
+    <section class="list-kurser">
+      <a href="#dance1">Street Dance</a>
+      <a href="#dance2">Klassisk balett</a>
+      <a href="#dance3">Tapdance</a>
+      <a href="#dance4">Breakdance</a>
+      <a href="#dance5">Contemporary</a>
+    </section> 
+  </div>
+
+  <section id="dance1" class="dance-container">
+      <video autoplay muted loop>
+        <source src="/IMG/video/street.mp4" type="video/mp4">
+        Video not supported
+      </video>
+      <article class="dance-text">
+        <h3>Lorem ipsum</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
+        <br>
+        <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+        <p>Lärare: <a href="">XXXXX</a> </p>
+      </article>
+  </section>
+
+  <section id="dance2" class="dance-container">
+    <video autoplay muted loop>
+      <source src="/IMG/video/balett.mp4" type="video/mp4">
+      Video not supported
+    </video>
+    <article class="dance-text">
+    <h3>Lorem ipsum</h3>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
+    <br>
+    <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+    <p>Lärare: <a href="">XXXXX</a> </p>
+  </article>
+  </section>
+
+  <section id="dance3" class="dance-container">
+    <video autoplay muted loop>
+      <source src="/IMG/video/tap.mp4" type="video/mp4">
+      Video not supported
+    </video>
+    <article class="dance-text">
+      <h3>Lorem ipsum</h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
+      <br>
+      <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+      <p>Lärare: <a href="">XXXXX</a> </p>
+    </article>
+  </section>
+
+  <section id="dance4" class="dance-container">
+    <video autoplay muted loop>
+      <source src="/IMG/video/breakdance.mp4" type="video/mp4">
+      Video not supported
+    </video>
+    <article class="dance-text">
+      <h3>Lorem ipsum</h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
+      <br>
+      <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+      <p>Lärare: <a href="">XXXXX</a> </p>
+    </article>
+  </section>
+
+  <section id="dance5" class="dance-container">
+    <video autoplay muted loop>
+      <source src="/IMG/video/contemporary.mp4" type="video/mp4">
+      Video not supported
+    </video>
+    <article class="dance-text">
+      <h3>Lorem ipsum</h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
+      <br>
+      <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+      <p>Lärare: <a href="">XXXX</a> 
+    </article>
+  </section>
     
+
+    <div class="tooltip-container">
+      <i class="fa fa-info-circle" aria-hidden="true"></i>
+      <p>
+        Du vet väl om att du alltid kan göra dina bokningar på Telefon
+        036-010203
+      </p>
+    </div> 
+
+  </main>
+  
+  <footer>
+    <ul>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play fa-fw" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa fa-envelope-open fa-fw" aria-hidden="true"></i></a>
+    </ul>
+  </footer>
+</body>
 </html>
