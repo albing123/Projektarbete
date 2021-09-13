@@ -239,6 +239,10 @@ button {
 
 }
 
+.card-content i:hover {
+  color: grey;
+}
+
 a {
   text-decoration: none;
   font-size: 22px;
