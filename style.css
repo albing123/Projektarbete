@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Header Vivian Start*/
@@ -137,15 +138,19 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  
 }
 footer ul {
   padding: 20px;
 }
 i {
   color: #000;
+  transition: 0.5s;
 }
 i:hover {
   color: white;
+  transform: rotate(20deg);
+  
 }
 
 .tooltip-container {
@@ -154,10 +159,13 @@ i:hover {
   right: 0;
   padding: 10px;
   background-color: red;
+  
 }
 
 .tooltip-container:hover p {
   display: block;
+  
+  
 }
 
 .tooltip-container p {
@@ -188,7 +196,7 @@ i:hover {
   padding: 0px 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .all-cards {
     flex-direction: column;
     margin-top: 20%;
@@ -208,6 +216,9 @@ i:hover {
   border-radius: 40px;
   padding-bottom: 15px;
 }
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 .title {
   color: grey;
@@ -225,6 +236,7 @@ button {
   border-radius: 20px;
   font-size: 18px;
   text-align: center;
+
 }
 
 a {
