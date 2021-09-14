@@ -71,7 +71,7 @@ nav a:hover {
 
 /* Kurser Vivian Start*/
 
-.kurser-container{
+.kurser-container {
   background-color: white;
   height: 100%;
   position: sticky;
@@ -80,27 +80,25 @@ nav a:hover {
   text-align: center;
   z-index: 1;
 }
-.kurser-container h1{
+.kurser-container h1 {
   font-size: 20px;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
 
-.list-kurser a{
+.list-kurser a {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 5px;
   color: black;
-  
 }
-.list-kurser a:hover{
-  color:#6f2232;
+.list-kurser a:hover {
+  color: #6f2232;
   font-weight: bold;
 }
 
-
-.dance-container{
+.dance-container {
   display: flex;
   position: relative;
   align-items: center;
@@ -109,19 +107,19 @@ nav a:hover {
   justify-content: center;
   overflow: scroll;
 }
-video{
+video {
   width: 400px;
   opacity: 0.8;
 }
-.dance-text{
+.dance-text {
   padding-left: 10px;
-} 
-.dance-text h3{
+}
+.dance-text h3 {
   font-size: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-  .dance-container{
+  .dance-container {
     display: block;
     width: 100%;
     padding: 100px 0;
@@ -130,15 +128,12 @@ video{
 
 /* Kurser Vivian end */
 
-
-
 footer {
   width: 100%;
   background: #c3073f;
   position: fixed;
   bottom: 0;
   text-align: center;
-  
 }
 footer ul {
   padding: 20px;
@@ -150,7 +145,6 @@ i {
 i:hover {
   color: white;
   transform: rotate(20deg);
-  
 }
 
 .tooltip-container {
@@ -159,13 +153,10 @@ i:hover {
   right: 0;
   padding: 10px;
   background-color: red;
-  
 }
 
 .tooltip-container:hover p {
   display: block;
-  
-  
 }
 
 .tooltip-container p {
@@ -215,9 +206,41 @@ i:hover {
   text-align: center;
   border-radius: 40px;
   padding-bottom: 15px;
+  transform-style: preserve-3d;
 }
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.card-content:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card .front {
+  background: #93a5cf;
+}
+
+.card .back {
+  background: #c3073f;
+  color: white;
+  transform: rotateY(180deg) translateZ(1px);
+  font-size: large;
+}
+
+.card .back p {
+  margin-top: 20%;
+  margin-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.card figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .title {
@@ -236,7 +259,6 @@ button {
   border-radius: 20px;
   font-size: 18px;
   text-align: center;
-
 }
 
 .card-content i:hover {
