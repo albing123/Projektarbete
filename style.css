@@ -181,14 +181,29 @@ i:hover {
   padding-top: 10px;
 }
 
+.card-mobile img {
+  width: 150px;
+  height: 160px;
+  padding-top: 10px;
+}
+
 .card-content {
   display: flex;
   width: 25%;
   padding: 0px 10px;
 }
 
-@media screen and (max-width: 600px) {
+.card-content-mobile {
+  display: flex;
+  width: 100%;
+  padding: 0px 10px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+@media screen and (max-width: 800px) {
   .all-cards {
+    display: none;
     flex-direction: column;
     margin-top: 20%;
     margin-bottom: 20%;
@@ -196,6 +211,16 @@ i:hover {
   .card-content {
     width: 100%;
   }
+}
+
+@media screen and (min-width: 801px) {
+  .all-cards-mobile {
+    display: none;
+  }
+}
+
+.card-content-mobile {
+  width: 100%;
 }
 
 .card {
@@ -207,6 +232,18 @@ i:hover {
   border-radius: 40px;
   padding-bottom: 15px;
   transform-style: preserve-3d;
+  background: #8cb0e6;
+}
+
+.card-mobile {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 40px;
+  padding-bottom: 15px;
+  background: #8cb0e6;
 }
 
 .card {
@@ -220,21 +257,23 @@ i:hover {
 }
 
 .card .front {
-  background: #93a5cf;
+  background: #8cb0e6;
+  border-radius: 40px;
 }
 
 .card .back {
-  background: #c3073f;
+  background: #49f8cc;
   color: white;
   transform: rotateY(180deg) translateZ(1px);
   font-size: large;
+  border-radius: 40px;
 }
 
 .card .back p {
-  margin-top: 20%;
   margin-bottom: 10%;
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 10%;
 }
 
 .card figure {
