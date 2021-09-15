@@ -18,7 +18,7 @@
         <a href="index.html">
           <img src="/IMG/dancing.png" alt="logo" width="50" />
           <h1>Dansskolan</h1>
-          <i class="fa fa-bars"></i>
+          <i onclick="hamburger()" class="fa fa-bars"></i>
         </a>
       </div>
       <nav>
@@ -65,4 +65,9 @@
       </ul>
     </footer>
   </body>
+  <script>
+function hamburger(){
+  document.getElementById("nav").style.visibility = "visible";
+  }
+</script>
 </html>
