@@ -46,25 +46,45 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
 nav a {
   color: black;
   text-decoration: none;
   margin: 0 10px;
 }
-
 nav a:hover {
   color: white;
 }
 
+.logo i{
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  nav {
+  header{
     display: block;
-    padding: 10px;
+    z-index: 2
+  }
+  .logo{
+    display: block;
+  }
+  .logo i{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+  }
+
+  nav {
+    background-color: #c3073f;
+    display: block;
+    text-align: center;
+    height: auto;
+    visibility: collapse;
   }
   nav a {
     display: block;
-  }
+    padding: 5px;
+  } 
 }
 
 /* Header Vivian End */
@@ -121,8 +141,7 @@ video {
 @media only screen and (max-width: 600px) {
   .dance-container {
     display: block;
-    width: 100%;
-    padding: 100px 0;
+    justify-content: center;
   }
 }
 
