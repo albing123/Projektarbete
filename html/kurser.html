@@ -19,7 +19,7 @@
       </a>
       <i onclick="hamburger()" class="fa fa-bars"></i>
     </div>
-      <nav>
+      <nav id="nav">
         <a href="/html/index.html">Hem</a>
         <a href="/html/kontakta-oss.html">Danslärare</a>
         <a href="/html/kurser.html">Kurser</a>
@@ -134,11 +134,13 @@
   </footer>
 </body>
   
-function hamburger() {
-  if (document.getElementById("nav").style.visibility === "collapse") {
-    document.getElementById("nav").style.visibility = "visible";
-  } else {
-    document.getElementById("nav").style.visibility = "collapse";
+<script>
+  function hamburger() {
+    if (document.getElementById("nav").style.visibility === "collapse") {
+      document.getElementById("nav").style.visibility = "visible";
+    } else {
+      document.getElementById("nav").style.visibility = "collapse";
+    }
   }
-}
+  </script>
 </html>
