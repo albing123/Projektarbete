@@ -294,6 +294,7 @@ i:hover {
   display: flex;
   width: 25%;
   padding: 0px 10px;
+  height: 400px;
 }
 
 .card-content-mobile {
