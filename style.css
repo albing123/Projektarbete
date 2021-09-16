@@ -7,10 +7,19 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: rgba(177, 216, 228, 0.384);
+}
+
+
+
+
 /* Header Vivian Start*/
 
 header {
-  background-color: #6f2232;
+
+  background-color: rgb(177, 216, 228);
+  /* background-color: #6f2232; */
   color: black;
   display: flex;
   align-items: center;
@@ -75,7 +84,8 @@ nav a:hover {
   }
 
   nav {
-    background-color: #c3073f;
+    background-color: rgb(202, 231, 240);
+    /* background-color: #c3073f; */
     display: block;
     text-align: center;
     height: auto;
@@ -92,7 +102,10 @@ nav a:hover {
 /* Kurser Vivian Start*/
 
 .kurser-container {
-  background-color: white;
+
+  background-color: rgb(202, 231, 240);
+
+  /* background-color: white; */
   height: 100%;
   position: sticky;
   top: 100px;
@@ -149,7 +162,8 @@ video {
 
 footer {
   width: 100%;
-  background: #c3073f;
+  background-color: rgb(177, 216, 228);
+  /* background: #c3073f; */
   position: fixed;
   bottom: 0;
   text-align: center;
