@@ -19,7 +19,6 @@ body{
 header {
 
   background-color: rgb(177, 216, 228);
-  /* background-color: #6f2232; */
   color: black;
   display: flex;
   align-items: center;
@@ -28,7 +27,7 @@ header {
   top: 0;
   width: 100%;
   height: 100px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo {
@@ -71,7 +70,6 @@ nav a:hover {
 @media only screen and (max-width: 600px) {
   header{
     display: block;
-    z-index: 2
   }
   .logo{
     display: block;
@@ -79,13 +77,13 @@ nav a:hover {
   .logo i{
     display: block;
     position: absolute;
-    right: 30px;
-    top: 50px;
+    right: 100px;
+    top: 40px;
+    font-size: 30px;
   }
 
   nav {
-    background-color: rgb(202, 231, 240);
-    /* background-color: #c3073f; */
+    background-color: rgb(160, 187, 196);
     display: block;
     text-align: center;
     height: auto;
@@ -102,19 +100,17 @@ nav a:hover {
 /* Kurser Vivian Start*/
 
 .kurser-container {
-
   background-color: rgb(202, 231, 240);
-
-  /* background-color: white; */
   height: 100%;
   position: sticky;
   top: 100px;
   justify-content: center;
   text-align: center;
   z-index: 1;
+  padding: 10px;
 }
 .kurser-container h1 {
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
@@ -138,23 +134,40 @@ nav a:hover {
   top: 100px;
   padding: 50px;
   justify-content: center;
-  overflow: scroll;
 }
 video {
   width: 400px;
   opacity: 0.8;
+  border-radius: 30px;
+  box-shadow: 3px 3px 20px 3px #000000;
 }
 .dance-text {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .dance-text h3 {
   font-size: 30px;
 }
 
 @media only screen and (max-width: 600px) {
+  .kurser-container{
+    position: relative;
+  }
+  .kurser-container h1{
+    font-size: 25px;
+  }
+  .list-kurser a {
+    font-size: 18px;
+  }
   .dance-container {
     display: block;
     justify-content: center;
+    text-align: center;
+  }
+  video{
+    width: 300px;
+  }
+  .dance-text{
+    padding: 5px 80px;
   }
 }
 
@@ -233,7 +246,6 @@ video {
 footer {
   width: 100%;
   background-color: rgb(177, 216, 228);
-  /* background: #c3073f; */
   position: fixed;
   bottom: 0;
   text-align: center;
