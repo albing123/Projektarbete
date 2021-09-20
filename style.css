@@ -109,7 +109,7 @@ nav a:hover, .nav-active{
 /* Kurser Vivian Start*/
 
 .kurser-container {
-  background-color: rgb(202, 231, 240);
+  background-color: rgb(110, 123, 128);
   height: 100%;
   position: sticky;
   top: 100px;
@@ -209,7 +209,7 @@ video {
   flex-direction: column;
   backdrop-filter: blur(8px);
   height: calc(100vh - 80px);
-  margin-top: 80px;
+  margin-top: 80px; 
   top: 0;
   bottom: 0;
   left: 0;
@@ -246,25 +246,30 @@ video {
 /* Olof */
 
 footer {
-  width: 100%;
   background-color: rgb(177, 216, 228);
+  display: flex;
   position: fixed;
   bottom: 0;
-  text-align: center;
   height: 40px;
+  width: 100%;
 }
+
 footer ul{
   display: flex;
-  height: 40px;
+  height: 100%;
+  width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  padding-left: 0;
 }
-footer i {
+footer li{
+  list-style-type: none;
+} 
+i {
   color: #000;
   transition: 0.5s;
-  padding: 0 20px;
 }
-footer i:hover {
+i:hover {
   color: white;
   transform: rotate(20deg);
 }
@@ -292,134 +297,90 @@ footer i:hover {
 
 
 
+/*kontakta oss*/
+
+.kontakt-container {
+  background-color: rgb(110, 123, 128);
+  height: 100%;
+  position: sticky;
+  top: 100px;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+}
+.kontakt-container h1 {
+  font-size: 20px; 
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.list-kontakt a {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 5px;
+  color: black;
+  font-size: 15px;
+}
+.list-kontakt a:hover {
+  color:black;
+  font-weight: bold;
+}
+
+.larare{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 120px;
+  text-transform:capitalize;
+}
+
+.hitta{
+  margin-bottom: 10%;
+}
+.hitta h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-transform:capitalize;
+}
+.adress-wrapper{
+text-align: center;
+padding: 10px 0;
+}
+.adress-wrapper .map{
+  margin-top: 20px;
+}
 
 
 
-/* Albin start på "Kontakta-oss"*/
-
+.all-cards, .all-cards-mobile{
+  margin: 150px 20px;
+  position: relative;
+}
 .all-cards {
-  display: flex;
-  margin-top: 15%;
+    display: flex;
 }
 
-.card img {
-  width: 150px;
-  height: 160px;
-  padding-top: 10px;
-  border-radius: 50%;
-  background-color: pink;
-}
-
-.card-mobile img {
-  width: 150px;
-  height: 160px;
-  padding-top: 10px;
-
-  border-radius: 50%;
-  background-color: pink;
-} 
-
-.card-content {
-  display: flex;
-  width: 25%;
-  padding: 0px 10px;
-  height: 400px;
-}
-
-.card-content-mobile {
-  display: flex;
-  width: 100%;
-  padding: 0px 10px;
-  margin-top: 20%;
-  margin-bottom: 20%;
-} 
-
-@media screen and (max-width: 800px) {
-
-.all-cards {
-    display: none;
-    flex-direction: column;
-    margin-top: 20%;
-    margin-bottom: 20%;
-  }
-  .card-content {
-    width: 100%;
-  }
-} 
-
-@media screen and (min-width: 800px) {
-  .all-cards-mobile {
-    display: none;
-  }
-}
-
-.card-content-mobile {
-  width: 100%;
-} 
-
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card, .card-mobile{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
-  background-color: white;
   text-align: center;
   border-radius: 40px;
   padding-bottom: 15px;
   transform-style: preserve-3d;
-  background: #8cb0e6;
+  background: rgb(233, 208, 230);
 }
 
-.card-mobile {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  background-color: white;
-  text-align: center;
-  border-radius: 40px;
-  padding-bottom: 15px;
-  background: #8cb0e6;
+.card img, .card-mobile img{
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+
 }
 
-.card {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s ease-in-out;
-}
 
-.card-content:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card .front {
-  background: #8cb0e6;
-  border-radius: 40px;
-}
-
-.card .back {
-  background: #49f8cc;
-  color: white;
-  transform: rotateY(180deg) translateZ(1px);
-  font-size: large;
-  border-radius: 40px;
-}
-
-.card .back p {
-  margin-bottom: 10%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 10%;
-}
-
-.card figure {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
 
 button {
   border: none;
@@ -434,9 +395,15 @@ button {
   text-align: center;
 }
 
-.card-content i:hover {
-  color: grey;
+button:hover{
+  animation: kontakt 1s infinite;
+  animation-direction: alternate;
 }
+
+@keyframes kontakt{
+  100% {width: 100px; background-color: black; color: white; opacity: 1.5;}
+}
+
 
 a {
   text-decoration: none;
@@ -449,7 +416,117 @@ button:hover {
   opacity: 0.6;
 }
 
-.kontakta-oss-container {
-  background-image: linear-gradient(to bottom right, #93a5cf, #e4efe9);
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+.all-cards {
+    display: none;
+  }
+  
+  .card-content-mobile {
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+    margin-top: 20%;
+    margin-bottom: 50px;
+  } 
+  .card-mobile img {
+    width: 150px;
+    height: 160px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: rgb(204, 135, 156);
+    margin-top: 10px;
+  } 
+  .card-content-mobile h1{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .card-content-mobile p{
+    font-size: 15px;
+    padding: 5px;
+  }
+  .card-content-mobile i{
+    margin: 10px 0;
+  }
+  
+
 } 
-/*Albin slut på "Kontakta-koss"*/
+
+@media screen and (min-width: 800px) {
+  .all-cards-mobile {
+    display: none;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.card-content:hover .card {
+  transform: rotateY(180deg);
+}
+
+
+.card img {
+  width: 150px;
+  height: 160px;
+  padding-top: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.card-content h1{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  display: flex;
+  width: 25%;
+  padding: 0px 10px;
+  height: 400px;
+}
+
+.card .front {
+  border-radius: 40px;
+}
+
+.card .back {
+  background-color: rgb(204, 135, 156);
+  color: white;
+  transform: rotateY(180deg) translateZ(1px);
+  font-size: large;
+  border-radius: 40px;
+}
+.card .back h2 {
+  margin-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+}
+.card .back p {
+  margin-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+}
+
+.card figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/*Kontakta-oss*/
