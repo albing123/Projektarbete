@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -17,7 +16,6 @@ body{
 /* Header Vivian Start*/
 
 header {
-
   background-color: rgb(177, 216, 228);
   color: black;
   display: flex;
@@ -28,6 +26,7 @@ header {
   width: 100%;
   height: 100px;
   z-index: 2;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -49,25 +48,28 @@ header {
 nav {
   height: 100%;
   width: 100%;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 nav a {
   color: black;
   text-decoration: none;
   margin: 0 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
-nav a:hover {
-  color: white;
+
+nav a:hover, .nav-active{
+  text-shadow: 2px 6px #ffffff;
 }
 
 .logo i{
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   header{
     display: block;
   }
@@ -93,6 +95,13 @@ nav a:hover {
     display: block;
     padding: 5px;
   } 
+
+
+  
+  nav a:hover, .nav-active{
+    text-shadow: none;
+    color: white;
+  }
 }
 
 /* Header Vivian End */
@@ -110,7 +119,7 @@ nav a:hover {
   padding: 10px;
 }
 .kurser-container h1 {
-  font-size: 30px;
+  font-size: 20px; 
   text-transform: uppercase;
   padding-bottom: 10px;
 }
@@ -121,9 +130,10 @@ nav a:hover {
   text-decoration: none;
   padding: 0 5px;
   color: black;
+  font-size: 15px;
 }
 .list-kurser a:hover {
-  color: #6f2232;
+  color:black;
   font-weight: bold;
 }
 
@@ -144,19 +154,11 @@ video {
 .dance-text {
   padding-left: 20px;
 }
-.dance-text h3 {
-  font-size: 30px;
-}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 800px) {
   .kurser-container{
     position: relative;
-  }
-  .kurser-container h1{
-    font-size: 25px;
-  }
-  .list-kurser a {
-    font-size: 18px;
   }
   .dance-container {
     display: block;
@@ -249,15 +251,20 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  height: 40px;
 }
-footer ul {
-  padding: 20px;
+footer ul{
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
-i {
+footer i {
   color: #000;
   transition: 0.5s;
+  padding: 0 20px;
 }
-i:hover {
+footer i:hover {
   color: white;
   transform: rotate(20deg);
 }
@@ -283,6 +290,11 @@ i:hover {
   right: 10;
 }
 
+
+
+
+
+
 /* Albin start på "Kontakta-oss"*/
 
 .all-cards {
@@ -294,13 +306,18 @@ i:hover {
   width: 150px;
   height: 160px;
   padding-top: 10px;
+  border-radius: 50%;
+  background-color: pink;
 }
 
 .card-mobile img {
   width: 150px;
   height: 160px;
   padding-top: 10px;
-}
+
+  border-radius: 50%;
+  background-color: pink;
+} 
 
 .card-content {
   display: flex;
@@ -315,10 +332,11 @@ i:hover {
   padding: 0px 10px;
   margin-top: 20%;
   margin-bottom: 20%;
-}
+} 
 
 @media screen and (max-width: 800px) {
-  .all-cards {
+
+.all-cards {
     display: none;
     flex-direction: column;
     margin-top: 20%;
@@ -327,9 +345,9 @@ i:hover {
   .card-content {
     width: 100%;
   }
-}
+} 
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 800px) {
   .all-cards-mobile {
     display: none;
   }
@@ -337,7 +355,7 @@ i:hover {
 
 .card-content-mobile {
   width: 100%;
-}
+} 
 
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -433,6 +451,5 @@ button:hover {
 
 .kontakta-oss-container {
   background-image: linear-gradient(to bottom right, #93a5cf, #e4efe9);
-}
-
+} 
 /*Albin slut på "Kontakta-koss"*/
