@@ -4,117 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="icon" href="/IMG/dancing.png">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="/media/img/dancing.png" />
     <title>Kurser</title>
     <script src="/script/javascript.js"></script>
   </head>
 
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="/IMG/dancing.png" alt="logo" width="50">
-        <h1>Dansskolan</h1>
-      </a>
-      <i onclick="hamburger()" class="fa fa-bars"></i>
-    </div>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/media/img/dancing.png" alt="logo" width="50" />
+          <h1>Dansskolan</h1>
+        </a>
+        <i onclick="hamburger()" class="fa fa-bars"></i>
+      </div>
       <nav id="nav">
-        <a href="/html/index.html">Hem</a>
-        <a class="nav-active" href="/html/kurser.html">Kurser</a>
-        <a href="/html/kontakta-oss.html">Kontakta oss</a>
+        <a href="/index.html">Hem</a>
+        <a href="/pages/kurser.html">Kurser</a>
+        <a class="nav-active" href="/pages/kontakta-oss.html">Kontakta oss</a>
       </nav>
-  </header>
+    </header>
 
+    <div class="nav-container">
+      <h1>Kurser</h1>
 
-<div class="nav-container">    
-  <h1>Kurser</h1>
+      <section class="nav-list">
+        <a href="#dance1">Street Dance</a>
+        <a href="#dance2">Klassisk balett</a>
+        <a href="#dance3">Tapdance</a>
+        <a href="#dance4">Breakdance</a>
+        <a href="#dance5">Contemporary</a>
+      </section>
+    </div>
 
-    <section class="nav-list">
-      <a href="#dance1">Street Dance</a>
-      <a href="#dance2">Klassisk balett</a>
-      <a href="#dance3">Tapdance</a>
-      <a href="#dance4">Breakdance</a>
-      <a href="#dance5">Contemporary</a>
-    </section> 
-  </div>
-
-  <section id="dance1" class="dance-container">
+    <section id="dance1" class="dance-container">
       <video autoplay muted loop>
-        <source src="/IMG/video/street.mp4" type="video/mp4">
+        <source src="/media/video/street.mp4" type="video/mp4" />
         Video not supported
       </video>
       <article class="dance-text">
         <h3>Street Dance</h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
-        <br>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          praesentium neque quae hic ex numquam.
+        </p>
+        <br />
         <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
-        <p>Lärare: <a href="/html/kontakta-oss.html">Namn</a> </p>
+        <p>Lärare: <a href="/html/kontakta-oss.html">Namn</a></p>
       </article>
-  </section>
+    </section>
 
-  <section id="dance2" class="dance-container">
-    <video autoplay muted loop>
-      <source src="/IMG/video/balett.mp4" type="video/mp4">
-      Video not supported
-    </video>
-    <article class="dance-text">
-    <h3>Klassisk Balett</h3>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
-    <br>
-    <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
-    <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a> </p>
-  </article>
-  </section>
+    <section id="dance2" class="dance-container">
+      <video autoplay muted loop>
+        <source src="/media/video/balett.mp4" type="video/mp4" />
+        Video not supported
+      </video>
+      <article class="dance-text">
+        <h3>Klassisk Balett</h3>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          praesentium neque quae hic ex numquam.
+        </p>
+        <br />
+        <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+        <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a></p>
+      </article>
+    </section>
 
-  <section id="dance3" class="dance-container">
-    <video autoplay muted loop>
-      <source src="/IMG/video/tap.mp4" type="video/mp4">
-      Video not supported
-    </video>
-    <article class="dance-text">
-      <h3>Tap Dance</h3>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
-      <br>
-      <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
-      <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a> </p>
-    </article>
-  </section>
+    <section id="dance3" class="dance-container">
+      <video autoplay muted loop>
+        <source src="/media/video/tap.mp4" type="video/mp4" />
+        Video not supported
+      </video>
+      <article class="dance-text">
+        <h3>Tap Dance</h3>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          praesentium neque quae hic ex numquam.
+        </p>
+        <br />
+        <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+        <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a></p>
+      </article>
+    </section>
 
-  <section id="dance4" class="dance-container">
-    <video autoplay muted loop>
-      <source src="/IMG/video/breakdance.mp4" type="video/mp4">
-      Video not supported
-    </video>
-    <article class="dance-text">
-      <h3>Breakdance</h3>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
-      <br>
-      <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
-      <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a> </p>
-    </article>
-  </section>
+    <section id="dance5" class="dance-container">
+      <video autoplay muted loop>
+        <source src="/media/video/breakdance.mp4" type="video/mp4" />
+        Video not supported
+      </video>
+      <article class="dance-text">
+        <h3>Breakdance</h3>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          praesentium neque quae hic ex numquam.
+        </p>
+        <br />
+        <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+        <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a></p>
+      </article>
+    </section>
 
-  <section id="dance5" class="dance-container">
-    <video autoplay muted loop>
-      <source src="/IMG/video/contemporary.mp4" type="video/mp4">
-      Video not supported
-    </video>
-    <article class="dance-text">
-      <h3>Contemporary</h3>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium neque quae hic ex numquam.</p>
-      <br>
-      <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
-      <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a> </p>
-    </article>
-  </section>
-    
+    <section id="dance5" class="dance-container">
+      <video autoplay muted loop>
+        <source src="/media/video/contemporary.mp4" type="video/mp4" />
+        Video not supported
+      </video>
+      <article class="dance-text">
+        <h3>Contemporary</h3>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          praesentium neque quae hic ex numquam.
+        </p>
+        <br />
+        <p>Kursstart 2023-01-01 måndagar kl.18:00</p>
+        <p>Lärare: <a href="/html/kontakta-oss.html">Förnamn Efternamn</a></p>
+      </article>
+    </section>
 
     <div class="tooltip-container">
       <i class="fa fa-info-circle" aria-hidden="true"></i>
@@ -122,16 +138,26 @@
         Du vet väl om att du alltid kan göra dina bokningar på Telefon
         036-010203
       </p>
-    </div> 
+    </div>
 
-  
-  <footer>
-    <ul>
-      <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play fa-fw" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa fa-envelope-open fa-fw" aria-hidden="true"></i></a></li>
-    </ul>
-  </footer>
-</body>
-  
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa fa-instagram fa-fw" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa fa-youtube-play fa-fw" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><i class="fa fa-envelope-open fa-fw" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
