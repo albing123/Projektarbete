@@ -1,22 +1,18 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: rgba(177, 216, 228, 0.384);
 }
-
-
-
 
 /* Header Vivian Start*/
 
 header {
-  background-color: rgb(177, 216, 228);
+  background-color: rgb(177, 216, 228, 0.8);
   color: black;
   display: flex;
   align-items: center;
@@ -27,6 +23,24 @@ header {
   height: 100px;
   z-index: 2;
   text-transform: uppercase;
+}
+
+@keyframes logo-animation {
+  0% {
+    transform: translate(-1000%, 0);
+  }
+  100% {
+    transform: translate (0%, 0);
+  }
+}
+
+.Animation-logo {
+  animation-name: logo-animation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function:ease-in
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
 }
 
 .logo {
@@ -61,22 +75,23 @@ nav a {
   font-size: 20px;
 }
 
-nav a:hover, .nav-active{
+nav a:hover,
+.nav-active {
   text-shadow: 2px 6px #ffffff;
 }
 
-.logo i{
+.logo i {
   display: none;
 }
 
 @media only screen and (max-width: 800px) {
-  header{
+  header {
     display: block;
   }
-  .logo{
+  .logo {
     display: block;
   }
-  .logo i{
+  .logo i {
     display: block;
     position: absolute;
     right: 100px;
@@ -94,11 +109,10 @@ nav a:hover, .nav-active{
   nav a {
     display: block;
     padding: 5px;
-  } 
+  }
 
-
-  
-  nav a:hover, .nav-active{
+  nav a:hover,
+  .nav-active {
     text-shadow: none;
     color: white;
   }
@@ -109,7 +123,7 @@ nav a:hover, .nav-active{
 /* Kurser Vivian Start*/
 
 .kurser-container {
-  background-color: rgb(202, 231, 240);
+  background-color: rgb(110, 123, 128);
   height: 100%;
   position: sticky;
   top: 100px;
@@ -119,7 +133,7 @@ nav a:hover, .nav-active{
   padding: 10px;
 }
 .kurser-container h1 {
-  font-size: 20px; 
+  font-size: 20px;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
@@ -133,7 +147,7 @@ nav a:hover, .nav-active{
   font-size: 15px;
 }
 .list-kurser a:hover {
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
@@ -155,9 +169,8 @@ video {
   padding-left: 20px;
 }
 
-
 @media only screen and (max-width: 800px) {
-  .kurser-container{
+  .kurser-container {
     position: relative;
   }
   .dance-container {
@@ -165,10 +178,10 @@ video {
     justify-content: center;
     text-align: center;
   }
-  video{
+  video {
     width: 300px;
   }
-  .dance-text{
+  .dance-text {
     padding: 5px 80px;
   }
 }
@@ -186,15 +199,13 @@ video {
   align-items: center;
 }
 
-
 .content video {
   position: relative;
   object-fit: cover;
   background-attachment: fixed;
   opacity: 0.8;
   width: 100%;
-  height: calc(100vh - 80px);
-  margin-top: 80px;
+  height: 100vh;
   top: 0;
   bottom: 0;
   left: 0;
@@ -208,8 +219,7 @@ video {
   justify-content: center;
   flex-direction: column;
   backdrop-filter: blur(8px);
-  height: calc(100vh - 80px);
-  margin-top: 80px;
+  height: 100vh;
   top: 0;
   bottom: 0;
   left: 0;
@@ -217,7 +227,7 @@ video {
 }
 
 .button {
-  display:inline-block;
+  display: inline-block;
   padding: 0.35em 1.2em;
   border: 0.1em solid white;
   margin-top: 20px;
@@ -226,7 +236,7 @@ video {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: 300;
-  color:white;
+  color: white;
   text-align: center;
   transition: all 0.2s;
 }
@@ -240,7 +250,7 @@ video {
   font-size: 3.5vw;
 }
 .slogan-text {
-  font-size: 2.0vw;
+  font-size: 2vw;
 }
 
 /* Olof */
@@ -254,17 +264,17 @@ footer {
   width: 100%;
 }
 
-footer ul{
+footer ul {
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   padding-left: 0;
 }
-footer li{
+footer li {
   list-style-type: none;
-} 
+}
 footer i {
   color: #000;
   transition: 0.5s;
@@ -295,11 +305,6 @@ footer i:hover {
   right: 10;
 }
 
-
-
-
-
-
 /*kontakta oss*/
 
 .kontakt-container {
@@ -313,7 +318,7 @@ footer i:hover {
   padding: 10px;
 }
 .kontakt-container h1 {
-  font-size: 20px; 
+  font-size: 20px;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
@@ -327,47 +332,47 @@ footer i:hover {
   font-size: 15px;
 }
 .list-kontakt a:hover {
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
-.larare{
+.larare {
   display: flex;
   justify-content: center;
   position: relative;
   top: 120px;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
-.hitta{
+.hitta {
   margin-bottom: 10%;
 }
-.hitta h1{
+.hitta h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
-.adress-wrapper{
-text-align: center;
-padding: 10px 0;
+.adress-wrapper {
+  text-align: center;
+  padding: 10px 0;
 }
-.adress-wrapper .map{
+.adress-wrapper .map {
   margin-top: 20px;
 }
 
-
-
-.all-cards, .all-cards-mobile{
+.all-cards,
+.all-cards-mobile {
   margin: 150px 20px;
   position: relative;
 }
 .all-cards {
-    display: flex;
+  display: flex;
 }
 
-.card, .card-mobile{
+.card,
+.card-mobile {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -378,12 +383,10 @@ padding: 10px 0;
   background: rgb(233, 208, 230);
 }
 
-.card img, .card-mobile img{
+.card img,
+.card-mobile img {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-
 }
-
-
 
 button {
   border: none;
@@ -398,15 +401,19 @@ button {
   text-align: center;
 }
 
-button:hover{
+button:hover {
   animation: kontakt 1s infinite;
   animation-direction: alternate;
 }
 
-@keyframes kontakt{
-  100% {width: 100px; background-color: black; color: white; opacity: 1.5;}
+@keyframes kontakt {
+  100% {
+    width: 100px;
+    background-color: black;
+    color: white;
+    opacity: 1.5;
+  }
 }
-
 
 a {
   text-decoration: none;
@@ -419,28 +426,23 @@ button:hover {
   opacity: 0.6;
 }
 
-
-
 .title {
   color: grey;
   font-size: 18px;
 }
 
-
-
 @media screen and (max-width: 800px) {
-
-.all-cards {
+  .all-cards {
     display: none;
   }
-  
+
   .card-content-mobile {
     display: flex;
     width: 100%;
     padding: 0px 10px;
     margin-top: 20%;
     margin-bottom: 50px;
-  } 
+  }
   .card-mobile img {
     width: 150px;
     height: 160px;
@@ -448,21 +450,19 @@ button:hover {
     border-radius: 50%;
     background-color: rgb(204, 135, 156);
     margin-top: 10px;
-  } 
-  .card-content-mobile h1{
+  }
+  .card-content-mobile h1 {
     font-size: 20px;
     padding-top: 10px;
   }
-  .card-content-mobile p{
+  .card-content-mobile p {
     font-size: 15px;
     padding: 5px;
   }
-  .card-content-mobile i{
+  .card-content-mobile i {
     margin: 10px 0;
   }
-  
-
-} 
+}
 
 @media screen and (min-width: 800px) {
   .all-cards-mobile {
@@ -480,7 +480,6 @@ button:hover {
   transform: rotateY(180deg);
 }
 
-
 .card img {
   width: 150px;
   height: 160px;
@@ -490,7 +489,7 @@ button:hover {
   margin-top: 10px;
 }
 
-.card-content h1{
+.card-content h1 {
   font-size: 25px;
   margin-bottom: 10px;
 }
