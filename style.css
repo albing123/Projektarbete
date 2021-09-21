@@ -1,18 +1,32 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: rgba(177, 216, 228, 0.384);
 }
 
 /* Header Start*/
 
 header {
-  background-color: rgb(177, 216, 228, 0.8);
+  background-color: rgb(177, 216, 228, 1);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.nav-opacity {
+  opacity: 0.7;
   color: black;
   display: flex;
   align-items: center;
@@ -36,11 +50,10 @@ header {
 
 .Animation-logo {
   animation-name: logo-animation;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  animation-delay: 0.1s;
 }
 
 .logo {
@@ -48,7 +61,7 @@ header {
   text-align: center;
   padding: 0 10px;
 }
-.logo i{
+.logo i {
   display: none;
 }
 .logo img {
@@ -78,21 +91,19 @@ nav a {
   font-size: 20px;
 }
 
-nav a:hover, 
-.nav-active{
+nav a:hover,
+.nav-active {
   text-shadow: 2px 6px #ffffff;
 }
 
-
-
 @media only screen and (max-width: 800px) {
-  header{
+  header {
     display: block;
   }
-  .logo{
+  .logo {
     display: block;
   }
-  .logo i{
+  .logo i {
     display: block;
     position: absolute;
     right: 100px;
@@ -110,10 +121,10 @@ nav a:hover,
   nav a {
     display: block;
     padding: 5px;
-  } 
+  }
 
-  nav a:hover, 
-  .nav-active{
+  nav a:hover,
+  .nav-active {
     text-shadow: none;
     color: white;
   }
@@ -133,7 +144,7 @@ nav a:hover,
   padding: 10px;
 }
 .nav-container h1 {
-  font-size: 20px; 
+  font-size: 20px;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
@@ -147,7 +158,7 @@ nav a:hover,
   font-size: 15px;
 }
 .nav-list a:hover {
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
@@ -192,7 +203,7 @@ nav a:hover,
 }
 
 .button {
-  display:inline-block;
+  display: inline-block;
   padding: 0.35em 1.2em;
   border: 0.1em solid white;
   margin-top: 20px;
@@ -201,7 +212,7 @@ nav a:hover,
   text-decoration: none;
   font-family: sans-serif;
   font-weight: 300;
-  color:white;
+  color: white;
   text-align: center;
   transition: all 0.2s;
 }
@@ -215,7 +226,7 @@ nav a:hover,
   font-size: 3.5vw;
 }
 .slogan-text {
-  font-size: 2.0vw;
+  font-size: 2vw;
 }
 
 /* Hem End */
@@ -246,38 +257,37 @@ video {
     justify-content: center;
     text-align: center;
   }
-  video{
+  video {
     width: 300px;
   }
-  .dance-text{
+  .dance-text {
     padding: 5px 80px;
   }
 }
 
 /* Kurser end */
 
-
-
 /* Kontakta oss Start*/
 
-.larare{
+.larare {
   display: flex;
   justify-content: center;
   position: relative;
   top: 120px;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .all-cards {
   display: flex;
 }
-.all-cards, .all-cards-mobile{
+.all-cards,
+.all-cards-mobile {
   margin: 150px 0;
   position: relative;
 }
 
-
-.card, .card-mobile{
+.card,
+.card-mobile {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1.9);
   max-width: 300px;
   margin: auto;
@@ -285,14 +295,15 @@ video {
   border-radius: 40px;
   padding-bottom: 15px;
   transform-style: preserve-3d;
-  background-color: #D78A76;
+  background-color: #d78a76;
   transition: transform 1s ease-in-out;
 }
 .card {
   width: 100%;
   height: 100%;
 }
-.card img, .card-mobile img{
+.card img,
+.card-mobile img {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 .card img {
@@ -307,7 +318,7 @@ video {
 .card-content:hover .card {
   transform: rotateY(180deg);
 }
-.card-content h1{
+.card-content h1 {
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -325,7 +336,7 @@ video {
 .card .front {
   border-radius: 40px;
 }
-.card .front h1{
+.card .front h1 {
   margin-top: 30px;
 }
 
@@ -362,17 +373,17 @@ video {
 }
 
 @media screen and (max-width: 800px) {
-.all-cards {
+  .all-cards {
     display: none;
   }
-  
+
   .card-content-mobile {
     display: flex;
     width: 100%;
     padding: 0px 10px;
     margin-top: 20%;
     margin-bottom: 50px;
-  } 
+  }
   .card-mobile img {
     width: 150px;
     height: 160px;
@@ -380,19 +391,19 @@ video {
     border-radius: 50%;
     background-color: transparent;
     margin-top: 10px;
-  } 
-  .card-content-mobile h1{
+  }
+  .card-content-mobile h1 {
     font-size: 20px;
     padding-top: 10px;
   }
-  .card-content-mobile p{
+  .card-content-mobile p {
     font-size: 15px;
     padding: 5px;
   }
-  .card-content-mobile i{
+  .card-content-mobile i {
     margin: 10px 0;
   }
-} 
+}
 
 a {
   text-decoration: none;
@@ -416,48 +427,52 @@ button {
   font-size: 18px;
   text-align: center;
 }
-button:hover{
+button:hover {
   animation: kontakt 1s infinite;
   animation-direction: alternate;
 }
-@keyframes kontakt{
-  100% {width: 100%; background-color: black; color: white; opacity: 1.5; border-radius: 0;}
+@keyframes kontakt {
+  100% {
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 1.5;
+    border-radius: 0;
+  }
 }
 
-
-
-
-.hitta{
+.hitta {
   margin-bottom: 150px;
 }
-.hitta h1{
+.hitta h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
-.adress-wrapper{
-text-align: center;
-padding: 10px 0;
+.adress-wrapper {
+  text-align: center;
+  padding: 10px 0;
 }
-.adress-wrapper .map{
+.adress-wrapper .map {
   margin-top: 20px;
 }
-.adress-icon-wrapper, .adress-icon-wrapper a {
+.adress-icon-wrapper,
+.adress-icon-wrapper a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.adress-icon-wrapper a, .adress-icon-wrapper p{
+.adress-icon-wrapper a,
+.adress-icon-wrapper p {
   margin: 10px;
 }
 
-iframe{
+iframe {
   border-radius: 30px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 /*Kontakta-oss End*/
 
@@ -482,7 +497,7 @@ iframe{
 /* Footer Start */
 
 footer {
-  background-color: rgb(177, 216, 228);
+  background-color: rgb(177, 216, 228, 1);
   display: flex;
   position: fixed;
   bottom: 0;
@@ -490,17 +505,21 @@ footer {
   width: 100%;
 }
 
-footer ul{
+.footer-opacity {
+  opacity: 0.7;
+}
+
+footer ul {
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   padding-left: 0;
 }
-footer li{
+footer li {
   list-style-type: none;
-} 
+}
 i {
   color: #000;
   transition: 0.5s;
