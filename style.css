@@ -38,7 +38,7 @@ header {
   animation-name: logo-animation;
   animation-duration: 4s;
   animation-iteration-count: 1;
-  animation-timing-function:ease-in
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   animation-delay: 0.1s;
 }
@@ -133,7 +133,7 @@ nav a:hover,
   padding: 10px;
 }
 .nav-container h1 {
-  font-size: 20px; 
+  font-size: 20px;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
@@ -147,7 +147,7 @@ nav a:hover,
   font-size: 15px;
 }
 .nav-list a:hover {
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
@@ -311,8 +311,7 @@ footer i:hover {
   top: 120px;
   text-transform: capitalize;
 }
-¢
-.hitta{
+¢ .hitta {
   margin-bottom: 150px;
 }
 
@@ -330,12 +329,14 @@ footer i:hover {
 .adress-wrapper .map {
   margin-top: 20px;
 }
-.adress-icon-wrapper, .adress-icon-wrapper a {
+.adress-icon-wrapper,
+.adress-icon-wrapper a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.adress-icon-wrapper a, .adress-icon-wrapper p{
+.adress-icon-wrapper a,
+.adress-icon-wrapper p {
   margin: 10px;
 }
 
@@ -343,13 +344,14 @@ footer i:hover {
   display: flex;
 }
 
-.all-cards, .all-cards-mobile{
+.all-cards,
+.all-cards-mobile {
   margin: 150px 0;
   position: relative;
 }
 
-
-.card, .card-mobile{
+.card,
+.card-mobile {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1.9);
   max-width: 300px;
   margin: auto;
@@ -357,9 +359,8 @@ footer i:hover {
   border-radius: 40px;
   padding-bottom: 15px;
   transform-style: preserve-3d;
-  background-color: #D78A76;
+  background-color: #d78a76;
   transition: transform 1s ease-in-out;
-
 }
 
 .card {
@@ -367,8 +368,8 @@ footer i:hover {
   height: 100%;
 }
 
-
-.card img, .card-mobile img{
+.card img,
+.card-mobile img {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -400,13 +401,19 @@ button {
   text-align: center;
 }
 
-button:hover{
+button:hover {
   animation: kontakt 1s infinite;
   animation-direction: alternate;
 }
 
-@keyframes kontakt{
-  100% {width: 100%; background-color: black; color: white; opacity: 1.5; border-radius: 0;}
+@keyframes kontakt {
+  100% {
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 1.5;
+    border-radius: 0;
+  }
 }
 
 a {
@@ -420,23 +427,16 @@ button:hover {
   opacity: 0.8;
 }
 
-
-iframe{
+iframe {
   border-radius: 30px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
-
-
 
 .card-content:hover .card {
   transform: rotateY(180deg);
 }
 
-
-
-
-.card-content h1{
+.card-content h1 {
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -485,17 +485,17 @@ iframe{
 }
 
 @media screen and (max-width: 800px) {
-.all-cards {
+  .all-cards {
     display: none;
   }
-  
+
   .card-content-mobile {
     display: flex;
     width: 100%;
     padding: 0px 10px;
     margin-top: 20%;
     margin-bottom: 50px;
-  } 
+  }
   .card-mobile img {
     width: 150px;
     height: 160px;
@@ -503,18 +503,18 @@ iframe{
     border-radius: 50%;
     background-color: transparent;
     margin-top: 10px;
-  } 
-  .card-content-mobile h1{
+  }
+  .card-content-mobile h1 {
     font-size: 20px;
     padding-top: 10px;
   }
-  .card-content-mobile p{
+  .card-content-mobile p {
     font-size: 15px;
     padding: 5px;
   }
-  .card-content-mobile i{
+  .card-content-mobile i {
     margin: 10px 0;
   }
-} 
+}
 
 /*Kontakta-oss*/
