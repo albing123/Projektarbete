@@ -226,6 +226,10 @@ nav a:hover,
   transition: all 0.2s;
 }
 
+#detach-button-host {
+  display: none;
+}
+
 .button:hover {
   color: black;
   background-color: white;
