@@ -503,6 +503,9 @@ iframe {
 
 #slide_inner {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background: #00ACEE;
   height: 100vh;
   padding: 38px;
@@ -518,7 +521,7 @@ iframe {
 }
 
 #slide:hover {
-  left: 250px;
+  left: 350px;
 }
 
 #slide:hover #slide_inner {
@@ -547,10 +550,33 @@ textarea {
   font-size: 16px;
 }
 
-#button-form {
-  list-style: none;
+form {
   margin-top: 20px;
-  background-color: #00ACEE;
+}
+
+.button-form {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.2em solid white;
+  margin-top: 20px;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button-form:hover {
+  color: black;
+  background-color: white;
+}
+
+label {
+  float: left;
 }
 
 /* Tool-tip End */
