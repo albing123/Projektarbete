@@ -487,18 +487,66 @@ iframe {
 
 /* Tool-tip Start*/
 
-.tooltip-container {
+#slide {
   position: fixed;
-  top: 50%;
-  right: 0;
-  padding: 10px;
-  background-color: red;
+  top: 40%;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-.tooltip-container:hover p {
-  display: block;
+
+#slide_inner {
+  position: fixed;
+  background: #00ACEE;
+  height: 100vh;
+  padding: 38px;
+  max-width: 410px;
+  top: 100px;
+  bottom: 300px;
+  color: white;
+  left: -400px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-.tooltip-container p {
-  display: none;
+
+#slide:hover {
+  left: 250px;
+}
+
+#slide:hover #slide_inner {
+  left: 0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 2px #000;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px #000;
+  border-radius: 4px;
+  background-color: #FFF;
+  font-size: 16px;
+}
+
+#button-form {
+  list-style: none;
+  margin-top: 20px;
+  background-color: #00ACEE;
 }
 
 /* Tool-tip End */
